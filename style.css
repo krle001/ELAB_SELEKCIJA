@@ -1,0 +1,226 @@
+@keyframes swipe {
+    0%{
+        transform: translate(-100%);
+    }
+    
+    100%{
+        transform: translate(100%);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #eee;
+}
+
+nav img {
+    height: 100px;
+}
+
+
+#pocetna {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    align-items: center;
+}
+#pocetni{
+    font-size: 2rem;
+}
+#pocetna img {
+    width: 45%;
+}
+
+#pocetna div {
+    width: 45%;
+}
+#pocetna > div> p {
+    
+    margin-top: 1rem;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 1.5rem
+}
+
+.poruci-dugme {
+    background-color: #cd2a2a;
+    color: #ffffff;
+    border: none;
+    padding: 20px 80px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+
+#oproizvodu {
+    padding: 50px 10%;
+}
+
+#oproizvodu > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 2rem;
+}
+
+#oproizvodu img {
+    width: 45%;
+    border-radius: 15px;
+}
+
+#oproizvodu div {
+    width: 100%;
+}
+
+.proizvodContainer{
+    border: solid 1px #E0E0E0;
+    border-radius: 15px;
+    background-color: #E0E0E0;
+    filter: drop-shadow(0 0 1rem #E0E0E0);
+}
+
+.proizvodContainer > div {
+    padding: 1rem;
+}
+
+.proizvodContainer > div > h2{
+    margin-bottom: 1rem;
+}
+
+
+
+#utisci {
+    padding: 50px 10%;
+}
+
+.testimonial-slider {
+    overflow: hidden;
+    display: flex;
+}
+
+.testimonial {
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    min-width: 100%; 
+    transition: transform 0.5s;
+}
+
+#forma-naslov{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#poruci {
+    padding: 50px 10%;
+}
+
+#poruci-dugme{
+    background-color: #cd2a2a;
+    color: #ffffff;
+    border: none;
+    padding: 20px 80px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+#poruci input, #poruci button {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+#poruci input{
+    border-radius: 10px;
+    border-color: #E0E0E0;
+    border-style: solid;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 80px;
+    
+}
+
+  
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+       
+    }
+
+    #pocetna, #oproizvodu > div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #pocetna img, #oproizvodu img, #pocetna div, #oproizvodu div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial {
+        min-width: 100%;
+    }
+
+
+
+
+}
+
+
